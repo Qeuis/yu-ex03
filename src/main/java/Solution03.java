@@ -9,19 +9,22 @@ import java.util.Scanner;
 
 public class Solution03
 {
+
+    /*
+        prompts user for quote
+            user enters quote
+        prompts user for author of quote
+            user enters author of quote
+        prints quote and the author of said quote
+     */
+
     public static void main(String[] arg)
     {
         Scanner input = new Scanner(System.in);
-        // variable to get input from user
         System.out.print("What is the quote?\n") ;
-        // prompt to ask user for quote
         String quote = input.nextLine();
-        // reads quote input from user
         System.out.print("Who says that quote?\n");
-        // prompt to ask user for author of quote
         String author = input.nextLine();
-        // reads author input from user
         System.out.println(author + " says, " + "\"" + quote+ "\"");
-        //prints quote and author
     }
 }
